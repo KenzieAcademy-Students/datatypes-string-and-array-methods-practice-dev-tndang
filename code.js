@@ -44,8 +44,6 @@ const kata1 = function () {
   h3Element.append(divElement);
 
   divElement.innerText = JSON.stringify(newArray);
-
-  return; // Return your result.
 }
 // Remember to execute your function AND render to the DOM!
 
@@ -62,13 +60,22 @@ const kata2 = function () {
   h3Element.append(divElement);
 
   divElement.innerText = JSON.stringify(newArray);
-  
-  return;
 }
 
 // Write a function that returns a string separated by semi-colons instead of commas from "gotCitiesCSV".
 const kata3 = function () {
   // Your Code Here
+  let commaString = gotCitiesCSV.split(",");
+  let semiColonString = commaString.join(";");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(semiColonString);
 }
 
 // Write a function that returns a CSV (comma-separated) string from the "lotrCitiesArray".
