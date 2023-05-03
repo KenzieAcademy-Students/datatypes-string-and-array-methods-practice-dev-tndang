@@ -34,39 +34,114 @@ let bestThing =
 // Write a function that returns an array with the cities in "gotCitiesCSV".
 const kata1 = function () {
   // Your Code Here
+  let newArray = gotCitiesCSV.split(",");
 
-  return; // Return your result.
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(newArray);
 }
 // Remember to execute your function AND render to the DOM!
 
 // Write a function that returns an array of words from the sentence in "bestThing".
 const kata2 = function () {
   // Your Code Here
+  let newArray = bestThing.split(" ");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(newArray);
 }
 
 // Write a function that returns a string separated by semi-colons instead of commas from "gotCitiesCSV".
 const kata3 = function () {
   // Your Code Here
+  let commaString = gotCitiesCSV.split(",");
+  let semiColonString = commaString.join("; ");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(semiColonString);
 }
 
 // Write a function that returns a CSV (comma-separated) string from the "lotrCitiesArray".
 const kata4 = function () {
   // Your Code Here
+  let newString = lotrCitiesArray.join(", ");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(newString);
 }
 
 // Write a function that returns an array with the first 5 cities in "lotrCitiesArray".
 const kata5 = function () {
   // Your Code Here
+  let lotrCitiesCSV = lotrCitiesArray.join(" ");
+  let first5Cities = lotrCitiesCSV.substring(0, 38);
+  let first5CitiesArray = first5Cities.split(" ");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(first5CitiesArray);
 }
 
 // Write a function that returns an array with the last 5 cities in "lotrCitiesArray".
 const kata6 = function () {
   // Your Code Here
+  let lotrCitiesCSV = lotrCitiesArray.join(" ");
+  let last5Cities = lotrCitiesCSV.substring(30);
+  let last5CitiesArray = last5Cities.split(" ");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(last5CitiesArray);
 }
 
 // Write a function that returns an array with the 3rd to 5th city in "lotrCitiesArray".
 const kata7 = function () {
   // Your Code Here
+  let lotrCitiesCSV = lotrCitiesArray.join(" ");
+  let thirdto5Cities = lotrCitiesCSV.substring(14, 38);
+  let thirdto5CitiesArray = thirdto5Cities.split(" ");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(thirdto5CitiesArray);
 }
 
 // Write a function that uses "splice" to remove "Rohan" from "lotrCitiesArray" and returns the modified "lotrCitiesArray".
