@@ -52,6 +52,18 @@ const kata1 = function () {
 // Write a function that returns an array of words from the sentence in "bestThing".
 const kata2 = function () {
   // Your Code Here
+  let newArray = bestThing.split(" ");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(newArray);
+  
+  return;
 }
 
 // Write a function that returns a string separated by semi-colons instead of commas from "gotCitiesCSV".
