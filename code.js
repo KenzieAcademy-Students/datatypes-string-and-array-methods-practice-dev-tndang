@@ -66,7 +66,7 @@ const kata2 = function () {
 const kata3 = function () {
   // Your Code Here
   let commaString = gotCitiesCSV.split(",");
-  let semiColonString = commaString.join(";");
+  let semiColonString = commaString.join("; ");
 
   let h3Element = document.createElement("h3");
   let divElement = document.createElement("div");
@@ -81,6 +81,16 @@ const kata3 = function () {
 // Write a function that returns a CSV (comma-separated) string from the "lotrCitiesArray".
 const kata4 = function () {
   // Your Code Here
+  let newString = lotrCitiesArray.join(", ");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(newString);
 }
 
 // Write a function that returns an array with the first 5 cities in "lotrCitiesArray".
