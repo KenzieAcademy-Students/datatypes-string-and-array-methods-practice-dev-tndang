@@ -130,6 +130,18 @@ const kata6 = function () {
 // Write a function that returns an array with the 3rd to 5th city in "lotrCitiesArray".
 const kata7 = function () {
   // Your Code Here
+  let lotrCitiesCSV = lotrCitiesArray.join(" ");
+  let thirdto5Cities = lotrCitiesCSV.substring(14, 38);
+  let thirdto5CitiesArray = thirdto5Cities.split(" ");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(thirdto5CitiesArray);
 }
 
 // Write a function that uses "splice" to remove "Rohan" from "lotrCitiesArray" and returns the modified "lotrCitiesArray".
