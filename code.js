@@ -34,6 +34,16 @@ let bestThing =
 // Write a function that returns an array with the cities in "gotCitiesCSV".
 const kata1 = function () {
   // Your Code Here
+  let newArray = gotCitiesCSV.split(",");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(newArray);
 
   return; // Return your result.
 }
