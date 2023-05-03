@@ -96,6 +96,18 @@ const kata4 = function () {
 // Write a function that returns an array with the first 5 cities in "lotrCitiesArray".
 const kata5 = function () {
   // Your Code Here
+  let lotrCitiesCSV = lotrCitiesArray.join(" ");
+  let last5Cities = lotrCitiesCSV.substring(0, 38);
+  let last5CitiesArray = last5Cities.split(" ");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(last5CitiesArray);
 }
 
 // Write a function that returns an array with the last 5 cities in "lotrCitiesArray".
