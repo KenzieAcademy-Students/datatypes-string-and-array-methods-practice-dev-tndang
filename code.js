@@ -282,6 +282,16 @@ const kata16 = function () {
 // Write a function that uses "pop" to remove the last city from "lotrCitiesArray" and returns the modified array.
 const kata17 = function () {
   // Your Code Here
+  lotrCitiesArray.pop();
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(lotrCitiesArray);
 }
 
 // Write a function that uses "push" to add back the city from "lotrCitiesArray" that was removed in #17 to the back of the array and returns the modified array.
