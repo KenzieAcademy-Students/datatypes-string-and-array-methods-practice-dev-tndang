@@ -147,6 +147,16 @@ const kata7 = function () {
 // Write a function that uses "splice" to remove "Rohan" from "lotrCitiesArray" and returns the modified "lotrCitiesArray".
 const kata8 = function () {
   // Your Code Here
+  lotrCitiesArray.splice(2, 1)
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(lotrCitiesArray);
 }
 
 // Write a function that uses "splice" to remove all cities after "Dead Marshes" in "lotrCitiesArray" and returns the modified "lotrCitiesArray".
