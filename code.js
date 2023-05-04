@@ -313,7 +313,7 @@ const kata18 = function () {
 const kata19 = function () {
   // Your Code Here
   lotrCitiesArray.shift();
-  
+
   let h3Element = document.createElement("h3");
   let divElement = document.createElement("div");
   let htmlBody = document.body;
@@ -327,6 +327,16 @@ const kata19 = function () {
 // Write a function that uses "unshift" to add back the city from "lotrCitiesArray" that was removed in #19 to the front of the array and returns the modified array.
 const kata20 = function () {
   // Your Code Here
+  lotrCitiesArray.unshift("Mordor");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(lotrCitiesArray);
 }
 
 // ----------------------------------------------------------------------
