@@ -192,6 +192,16 @@ const kata10 = function () {
 // Write a function that uses "splice" to rename "Dead Marshes" to "Deadest Marshes" in "lotrCitiesArray" and returns the modified "lotrCitiesArray".
 const kata11 = function () {
   // Your Code Here
+  lotrCitiesArray.splice(5, 1, "Deadest Marshes");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(lotrCitiesArray);
 }
 
 // Write a function that uses "slice" to return a string with the first 14 characters from "bestThing".
