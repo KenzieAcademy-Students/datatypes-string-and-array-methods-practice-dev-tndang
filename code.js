@@ -207,6 +207,16 @@ const kata11 = function () {
 // Write a function that uses "slice" to return a string with the first 14 characters from "bestThing".
 const kata12 = function () {
   // Your Code Here
+  let newString = bestThing.slice(0, 14);
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(newString);
 }
 
 // Write a function that uses "slice" to return a string with the last 12 characters from "bestThing".
