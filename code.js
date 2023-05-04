@@ -147,66 +147,196 @@ const kata7 = function () {
 // Write a function that uses "splice" to remove "Rohan" from "lotrCitiesArray" and returns the modified "lotrCitiesArray".
 const kata8 = function () {
   // Your Code Here
+  lotrCitiesArray.splice(2, 1)
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(lotrCitiesArray);
 }
 
 // Write a function that uses "splice" to remove all cities after "Dead Marshes" in "lotrCitiesArray" and returns the modified "lotrCitiesArray".
 const kata9 = function () {
   // Your Code Here
+  lotrCitiesArray.splice(5, 2);
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(lotrCitiesArray);
 }
 
 // Write a function that uses "splice" to add "Rohan" back to "lotrCitiesArray" right after "Gondor" and returns the modified "lotrCitiesArray".
 const kata10 = function () {
   // Your Code Here
+  lotrCitiesArray.splice(2, 0, "Rohan");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(lotrCitiesArray);
 }
 
 // Write a function that uses "splice" to rename "Dead Marshes" to "Deadest Marshes" in "lotrCitiesArray" and returns the modified "lotrCitiesArray".
 const kata11 = function () {
   // Your Code Here
+  lotrCitiesArray.splice(5, 1, "Deadest Marshes");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(lotrCitiesArray);
 }
 
 // Write a function that uses "slice" to return a string with the first 14 characters from "bestThing".
 const kata12 = function () {
   // Your Code Here
+  let newString = bestThing.slice(0, 14);
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(newString);
 }
 
 // Write a function that uses "slice" to return a string with the last 12 characters from "bestThing".
 const kata13 = function () {
   // Your Code Here
+  let newString = bestThing.slice(-12);
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(newString);
 }
 
 // Write a function that uses "slice" to return a string with the characters between the 23rd and 38th position of "bestThing" (i.e., "boolean is even").
 const kata14 = function () {
   // Your Code Here
+  let newString = bestThing.slice(23, 38);
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(newString);
 }
 
 // Write a function that does the exact same thing as #13 but use the "substring" method instead of "slice".
 const kata15 = function () {
   // Your Code Here
+  let newString = bestThing.substring(bestThing.length - 12);
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(newString);
 }
 
 // Write a function that does the exact same thing as #14 but use the "substring" method instead of "slice".
 const kata16 = function () {
   // Your Code Here
+  let newString = bestThing.substring(23, 38);
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(newString);
 }
 
 // Write a function that uses "pop" to remove the last city from "lotrCitiesArray" and returns the modified array.
 const kata17 = function () {
   // Your Code Here
+  lotrCitiesArray.pop();
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(lotrCitiesArray);
 }
 
 // Write a function that uses "push" to add back the city from "lotrCitiesArray" that was removed in #17 to the back of the array and returns the modified array.
 const kata18 = function () {
   // Your Code Here
+  lotrCitiesArray.push("Deadest Mashes")
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(lotrCitiesArray);
 }
 
 // Write a function that uses "shift" to remove the first city from "lotrCitiesArray" and returns the modified array.
 const kata19 = function () {
   // Your Code Here
+  lotrCitiesArray.shift();
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(lotrCitiesArray);
 }
 
 // Write a function that uses "unshift" to add back the city from "lotrCitiesArray" that was removed in #19 to the front of the array and returns the modified array.
 const kata20 = function () {
   // Your Code Here
+  lotrCitiesArray.unshift("Mordor");
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(lotrCitiesArray);
 }
 
 // ----------------------------------------------------------------------
