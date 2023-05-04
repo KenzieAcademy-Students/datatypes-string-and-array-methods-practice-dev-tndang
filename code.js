@@ -267,6 +267,16 @@ const kata15 = function () {
 // Write a function that does the exact same thing as #14 but use the "substring" method instead of "slice".
 const kata16 = function () {
   // Your Code Here
+  let newString = bestThing.substring(23, 38);
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(newString);
 }
 
 // Write a function that uses "pop" to remove the last city from "lotrCitiesArray" and returns the modified array.
