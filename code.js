@@ -297,6 +297,16 @@ const kata17 = function () {
 // Write a function that uses "push" to add back the city from "lotrCitiesArray" that was removed in #17 to the back of the array and returns the modified array.
 const kata18 = function () {
   // Your Code Here
+  lotrCitiesArray.push("Deadest Mashes")
+
+  let h3Element = document.createElement("h3");
+  let divElement = document.createElement("div");
+  let htmlBody = document.body;
+
+  htmlBody.append(h3Element);
+  h3Element.append(divElement);
+
+  divElement.innerText = JSON.stringify(lotrCitiesArray);
 }
 
 // Write a function that uses "shift" to remove the first city from "lotrCitiesArray" and returns the modified array.
